@@ -1,14 +1,164 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>2025 Toronto Go Season Overview</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+      :root{
+        --bg:#f6f8fb;
+        --card:#ffffff;
+        --muted:#6b7280;
+        --accent:#0f172a;
+        --accent-2:#2563eb;
+        --border:#e6e9ef;
+      }
+      html,body{
+        height:100%;
+        margin:0;
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        background: linear-gradient(180deg, var(--bg), #ffffff 60%);
+        color:var(--accent);
+        -webkit-font-smoothing:antialiased;
+        -moz-osx-font-smoothing:grayscale;
+      }
+
+      .container{
+        max-width:980px;
+        margin:32px auto;
+        padding:28px;
+        background:var(--card);
+        border-radius:12px;
+        box-shadow: 0 8px 30px rgba(15,23,42,0.08);
+        border:1px solid var(--border);
+      }
+
+      header.site-header{
+        display:flex;
+        align-items:flex-start;
+        gap:18px;
+        margin-bottom:18px;
+      }
+      .logo{
+        width:64px;
+        height:64px;
+        border-radius:8px;
+        background:linear-gradient(135deg,#111827,#0ea5e9);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:white;
+        font-weight:800;
+        font-size:20px;
+        box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+      }
+
+      h1{
+        margin:0;
+        font-size:22px;
+        font-weight:800;
+        letter-spacing:-0.02em;
+        color:var(--accent);
+      }
+      p.lead{
+        margin:8px 0 18px 0;
+        color:var(--muted);
+        font-size:14px;
+      }
+
+      /* Section title (makes "CGA Ranking Guidance" larger) */
+      h2.section-title{
+        font-size:20px;
+        margin:28px 0 12px 0;
+        font-weight:700;
+        color:var(--accent);
+        position:relative;
+        padding-bottom:8px;
+      }
+      h2.section-title::after{
+        content:"";
+        position:absolute;
+        left:0;
+        bottom:0;
+        height:3px;
+        width:60px;
+        background:linear-gradient(90deg,var(--accent-2),#06b6d4);
+        border-radius:3px;
+        opacity:0.95;
+      }
+
+      table {
+        width:100%;
+        border-collapse:collapse;
+        margin-top:12px;
+        background:transparent;
+        font-size:14px;
+      }
+      thead th{
+        text-align:left;
+        font-weight:600;
+        padding:12px;
+        background:linear-gradient(180deg,#fbfdff,#f7fafc);
+        border-bottom:1px solid var(--border);
+        color:var(--accent);
+      }
+      tbody td{
+        padding:12px;
+        border-bottom:1px solid var(--border);
+        vertical-align:top;
+      }
+      tbody tr:nth-child(odd){
+        background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6));
+      }
+      tbody tr:hover{
+        background:rgba(37,99,235,0.03);
+      }
+
+      /* Compact ranking table style */
+      table.rank-table{
+        max-width:420px;
+        margin-top:8px;
+        border-radius:8px;
+        overflow:hidden;
+        box-shadow: 0 6px 18px rgba(15,23,42,0.03);
+      }
+      table.rank-table td, table.rank-table th{
+        padding:10px 12px;
+      }
+
+      .note{
+        display:block;
+        margin-top:6px;
+        line-height:1.4;
+        color:var(--muted);
+        font-size:13px;
+      }
+
+      footer{
+        margin-top:20px;
+        color:var(--muted);
+        font-size:13px;
+      }
+
+      /* Responsive */
+      @media (max-width:640px){
+        .container{ padding:18px; margin:14px; }
+        h1{ font-size:18px; }
+        h2.section-title{ font-size:18px; }
+        .logo{ display:none; }
+      }
+    </style>
   </head>
   
   <body>
- <main>
-<h1>2025 Toronto Go Season Overview</h1>
-<p>A summary of notable 2025 Go results for Toronto players, including local tournament champions and achievements by players from the Greater Toronto Area, as well as highlights from national events such as the 2025 Professional Qualification Exam.</p>
-
+ <main class="container">
+  <header class="site-header" aria-hidden="true">
+    <div class="logo">Go</div>
+    <div>
+      <h1>2025 Toronto Go Season Overview</h1>
+      <p class="lead">A summary of notable 2025 Go results for Toronto players, including local tournament champions and achievements by players from the Greater Toronto Area, as well as highlights from national events such as the 2025 Professional Qualification Exam.</p>
+    </div>
+  </header>
 
 <table>
 <thead>
@@ -84,9 +234,9 @@
 </tbody>
 </table>
 
-  <h2>CGA Ranking Guidance</h2>
+  <h2 class="section-title">CGA Ranking Guidance</h2>
 
-  <table border="1" cellpadding="6">
+  <table class="rank-table" border="1" cellpadding="6">
   <thead>
     <tr>
       <th>Fox/野狐</th>
@@ -103,33 +253,11 @@
     <tr><td>9d/9段</td><td>6d</td></tr>
   </tbody>
 </table>
-<style>
-table {
-width: 100%;
-border-collapse: collapse;
-margin-top: 16px;
-}
-th, td {
-border: 1px solid #ccc;
-padding: 10px;
-vertical-align: top;
-}
-th {
-background: #f2f2f2;
-text-align: left;
-}
-/* Improve spacing for Canadian Pro Exam row */
-td .note {
-display: block;
-margin-top: 6px;
-line-height: 1.4;
-}
-</style>
-</main>
-    <footer>
-    </footer>
-	
-  </body>
 
-  
+    <footer>
+      <div>Updated 2025 • Toronto Go</div>
+    </footer>
+    
+  </main>
+  </body>
 </html>
