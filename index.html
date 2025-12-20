@@ -53,12 +53,12 @@
         box-shadow: 0 6px 18px rgba(37,99,235,0.12);
       }
 
-      h1{
-        margin:0;
-        font-size:22px;
-        font-weight:800;
-        letter-spacing:-0.02em;
-        color:var(--accent);
+      h1 {
+        margin: 0 0 16px 0;
+        font-size: 28px;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        color: var(--accent);
       }
       p.lead{
         margin:8px 0 18px 0;
@@ -134,6 +134,20 @@
         font-size:13px;
       }
 
+      section.overview {
+        margin-top: 24px;
+      }
+      section.overview h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+      section.overview p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: var(--muted);
+      }
+
       footer{
         margin-top:20px;
         color:var(--muted);
@@ -152,13 +166,12 @@
   
   <body>
  <main class="container">
-  <header class="site-header" aria-hidden="true">
-    <div class="logo">Go</div>
-    <div>
-      <h1>2025 Toronto Go Season Overview</h1>
-      <p class="lead">A summary of notable 2025 Go results for Toronto players, including local tournament champions and achievements by players from the Greater Toronto Area, as well as highlights from national events such as the 2025 Professional Qualification Exam.</p>
-    </div>
-  </header>
+<header class="site-header" aria-hidden="true">
+  <div class="logo">Go</div>
+  <div>
+    <h1>Canadian Go</h1>
+  </div>
+</header>
 
     <nav>
       <ul style="list-style: none; display: flex; gap: 16px; padding: 0; margin-bottom: 24px;">
@@ -167,6 +180,10 @@
       </ul>
     </nav>
 
+      <section class="overview">
+        <h2>2025 Toronto Go Season Overview</h2>
+        <p>A summary of notable 2025 Go results for Toronto players, including local tournament champions and achievements by players from the Greater Toronto Area, as well as highlights from national events such as the 2025 Professional Qualification Exam.</p>
+      </section>
 <table>
 <thead>
 <tr>
