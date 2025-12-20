@@ -54,56 +54,119 @@
         letter-spacing: -0.02em;
         color: var(--accent);
       }
+      h3 {
+        margin-top: 32px;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--accent);
+      }
       p {
         font-size: 14px;
         line-height: 1.6;
         color: var(--muted);
+      }
+      ul {
+        margin: 16px 0;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 8px;
       }
       img {
         max-width: 100%;
         border-radius: 8px;
         margin-top: 16px;
       }
-      header.site-header{
-        display:flex;
-        align-items:flex-start;
-        gap:18px;
-        margin-bottom:18px;
+      header.site-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+        margin-bottom: 18px;
       }
-      .logo{
-        width:64px;
-        height:64px;
-        border-radius:8px;
-        background:linear-gradient(135deg,#111827,#0ea5e9);
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        color:white;
-        font-weight:800;
-        font-size:20px;
-        box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+      .logo {
+        width: 64px;
+        height: 64px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #111827, #0ea5e9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 800;
+        font-size: 20px;
+        box-shadow: 0 6px 18px rgba(37, 99, 235, 0.12);
       }
-
+ul {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 5px 0;
+  padding-left: 16px;
+}
+li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0 0 5px 0;
+  padding-left: 5px;
+}
     </style>
   </head>
   <body>
     <main class="container">
-<header class="site-header" aria-hidden="true">
-  <div class="logo">Go</div>
-  <div>
-    <h1>Canadian Go</h1>
-  </div>
-</header>
+      <header class="site-header" aria-hidden="true">
+        <div class="logo">Go</div>
+        <div>
+          <h1>Canadian Go</h1>
+        </div>
+      </header>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="city-league.html" style="color: var(--accent-2);">Pandanet-AGA City League</a></li>
         </ul>
       </nav>
+
+      <!-- Room Tutorial Section -->
       <h3>Room Tutorial</h3>
       <p>This picture shows where to select the correct playing room on GoPanda2. In the drop-down menu at the top, you can change the room to “AGA City League” for Leagues A–D, or “AGA City League (Manual)” for League E. Make sure you choose the correct room before your game starts.</p>
       <p>这张图片展示了如何在 GoPanda2 中选择正确的对局房间。你可以在上方的下拉菜单中切换到 “AGA City League”（A–D 级使用）或 “AGA City League (Manual)”（E 级使用）。请在对局开始前确认你进入了正确的房间。</p>
       <img src="assets/room-tutorial.webp" alt="Room Tutorial">
-    </main>
+
+<!-- City League FAQs Section -->
+<h3>City League FAQs (for Toronto and Waterloo teams)</h3>
+<h5>My opponent did not show up. What do I do?</h5>
+<p>If a game has been scheduled and one player is not present at the agreed start time, there is a 20-minute grace period. After 20 minutes, the absent player forfeits the game.</p>
+<p>If your opponent does not show up, take a timestamped screenshot of the Pandanet lobby showing their absence.</p>
+<p>Send this information to your team captain. If you already have the opposing team captain’s email, you may instead email the opposing team captain directly and cc your team captain. The team captain will forward the information to the Tournament Director as needed. If neither player is present at the agreed time and there is no valid reason, the game will be ruled a double forfeit.</p>
+
+<h5>What happens if a match ends 2–2?</h5>
+<p>During the regular season, a 2–2 match result is recorded as a draw.</p>
+<p>In A League finals and in any promotion or relegation matches, a 2–2 result is decided by Board 1. The team that wins on Board 1 wins the match.</p>
+<ul>
+  <li>Board Points</li>
+  <li>Head-to-head result</li>
+  <li>Board 1 wins</li>
+  <li>Board 2 wins</li>
+  <li>Board 3 wins</li>
+  <li>Board 4 wins</li>
+</ul>
+<p>Board Points are calculated as the total number of individual game wins across all rounds. Each game win is worth 1 Board Point. For example, a 2–2 match gives each team 2 Board Points.</p>
+
+<h5>What software should I use for the video call?</h5>
+<p>Players should meet on Pandanet at the scheduled time. You can use Pandanet private messages to agree on which video call software to use.</p>
+<ul>
+  <li>Jitsi: Recommended for players without a paid Zoom account. No time limit. Works in a web browser and has a mobile app.</li>
+  <li>Zoom (paid): No time limit.</li>
+  <li>Skype or Google Meet: No time limits. Many players can use Google Meet through their Gmail accounts.</li>
+</ul>
+<p>If you prefer not to sort out video call details on the day of the game, you may tell the Toronto team captain in advance that you would like to formalize the video call process ahead of time so the game runs more smoothly.</p>
+<p>Additional webcam rules can be found here: <a href="https://pandanet-igs.com/communities/agacityleague/503" target="_blank">Pandanet City League Rules</a></p>
+
+<h5>I reviewed the game using AI and believe my opponent cheated. What should I do?</h5>
+<p>Only players who participated in the game may file a formal complaint.</p>
+<p>If you believe your opponent violated the Standards of Conduct, collect any supporting evidence, such as the SGF file.</p>
+<p>You must email the Tournament Director using the email address listed in the tournament announcement, including your evidence. Complaints should be submitted early enough for the Tournament Director to respond before the next round is paired. Complaints submitted later may still be investigated, but they may not affect the next round pairings.</p>
+<h5>More details are available in the official rules document: <a href="https://drive.google.com/file/d/1YMuiZUl6irg840YM_lWlnqZV8ZCTKSxR/view" target="_blank">Official Rules</a></h5>
   </body>
 </html>
