@@ -32,21 +32,6 @@
         box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
         border: 1px solid var(--border);
       }
-      nav ul {
-        list-style: none;
-        display: flex;
-        gap: 16px;
-        padding: 0;
-        margin-bottom: 24px;
-      }
-      nav ul li a {
-        text-decoration: none;
-        color: var(--accent);
-        font-weight: 600;
-      }
-      nav ul li a:hover {
-        color: var(--accent-2);
-      }
       h1 {
         margin: 0 0 16px 0;
         font-size: 28px;
@@ -64,13 +49,6 @@
         font-size: 14px;
         line-height: 1.6;
         color: var(--muted);
-      }
-      ul {
-        margin: 16px 0;
-        padding-left: 20px;
-      }
-      li {
-        margin-bottom: 8px;
       }
       img {
         max-width: 100%;
@@ -96,19 +74,30 @@
         font-size: 20px;
         box-shadow: 0 6px 18px rgba(37, 99, 235, 0.12);
       }
-ul {
+main ul {
   font-size: 14px;
   line-height: 1.6;
   color: var(--muted);
   margin: 0 0 5px 0;
   padding-left: 16px;
 }
-li {
+main li {
   font-size: 14px;
   line-height: 1.6;
   color: var(--muted);
   margin: 0 0 5px 0;
   padding-left: 5px;
+}
+html, body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--accent);
+}
+
+p, ul, li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
 }
     </style>
   </head>
@@ -120,12 +109,12 @@ li {
           <h1>Canadian Go</h1>
         </div>
       </header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="city-league.html" style="color: var(--accent-2);">Pandanet-AGA City League</a></li>
-        </ul>
-      </nav>
+    <nav>
+      <ul style="list-style: none; display: flex; gap: 16px; padding: 0; margin-bottom: 24px;">
+        <li><a href="index.html" style="text-decoration: none; color: var(--accent); font-weight: 600;">Home</a></li>
+        <li><a href="city-league.html" style="text-decoration: none; color: var(--accent-2); font-weight: 600;">Pandanet-AGA City League</a></li>
+      </ul>
+    </nav>
 
       <!-- Room Tutorial Section -->
       <h3>Room Tutorial</h3>
@@ -143,6 +132,7 @@ li {
 <h5>What happens if a match ends 2–2?</h5>
 <p>During the regular season, a 2–2 match result is recorded as a draw.</p>
 <p>In A League finals and in any promotion or relegation matches, a 2–2 result is decided by Board 1. The team that wins on Board 1 wins the match.</p>
+<p>Tie breaks for final standings and prizes are determined in the following order:</p>
 <ul>
   <li>Board Points</li>
   <li>Head-to-head result</li>
@@ -161,12 +151,13 @@ li {
   <li>Skype or Google Meet: No time limits. Many players can use Google Meet through their Gmail accounts.</li>
 </ul>
 <p>If you prefer not to sort out video call details on the day of the game, you may tell the Toronto team captain in advance that you would like to formalize the video call process ahead of time so the game runs more smoothly.</p>
-<p>Additional webcam rules can be found here: <a href="https://pandanet-igs.com/communities/agacityleague/503" target="_blank">Pandanet City League Rules</a></p>
+<p>Additional webcam rules can be found here: <a href="https://pandanet-igs.com/communities/agacityleague/503" target="_blank">Pandanet Webcam Rules</a></p>
 
 <h5>I reviewed the game using AI and believe my opponent cheated. What should I do?</h5>
 <p>Only players who participated in the game may file a formal complaint.</p>
 <p>If you believe your opponent violated the Standards of Conduct, collect any supporting evidence, such as the SGF file.</p>
 <p>You must email the Tournament Director using the email address listed in the tournament announcement, including your evidence. Complaints should be submitted early enough for the Tournament Director to respond before the next round is paired. Complaints submitted later may still be investigated, but they may not affect the next round pairings.</p>
+<p>You may contact your team captain for help or guidance. However, under the current rules, the formal complaint must come from the player involved in the game. This document does not fully account for cases involving junior players, where it may be unreasonable for a child to submit a formal complaint on their own.</p>
 <h5>More details are available in the official rules document: <a href="https://drive.google.com/file/d/1YMuiZUl6irg840YM_lWlnqZV8ZCTKSxR/view" target="_blank">Official Rules</a></h5>
   </body>
 </html>
